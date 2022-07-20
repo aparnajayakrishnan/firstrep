@@ -1,0 +1,29 @@
+div{
+    height: 200px;
+    width: 300px;
+    background-color: blue;
+    animation: anime 1s ease-out 1s infinite;
+transition: 1s ease-in-out;
+}
+div:hover{
+   animation-play-state: paused;
+    transform: rotatez(50deg) scale(.8);
+}
+@keyframes anime{
+    0%{
+        width: 200px;
+        background-color: blueviolet;
+
+    }
+    50%{
+
+        width: 600px;
+        background-color: black;
+
+    }
+    100%{
+        width: 200px;
+        background-color: blueviolet;
+
+    }
+}
